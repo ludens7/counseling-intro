@@ -1578,8 +1578,19 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     gap: 6px;
+    flex-wrap: wrap;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.contact-guide-text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #92400e;
+    letter-spacing: normal;
+    text-transform: none;
+    margin-left: 4px;
 }
 
 .contact-label i {
