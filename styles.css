@@ -1551,3 +1551,110 @@ h1, h2, h3, h4 {
     }
 }
 
+/* Contact Card Styles */
+.contact-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(254, 243, 199, 0.35) 100%);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.contact-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.contact-label i {
+    width: 16px;
+    height: 16px;
+    color: var(--primary);
+}
+
+.contact-value.email-link {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.contact-value.email-link:hover {
+    color: #d97706;
+    text-decoration: underline;
+    transform: translateY(-1px);
+}
+
+.contact-sublinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.2rem;
+}
+
+.contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.contact-badge i {
+    width: 16px;
+    height: 16px;
+}
+
+.insta-badge {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #ffffff;
+}
+
+.insta-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(220, 39, 67, 0.35);
+}
+
+.kakao-badge {
+    background: #fee500;
+    color: #3c1e1e;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.kakao-badge:hover {
+    background: #fedb00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(254, 229, 0, 0.45);
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
